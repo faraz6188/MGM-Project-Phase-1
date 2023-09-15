@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found - Report Lost Item</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Lost and Found</h1>
+        <nav>
+            <ul>
+                <li><a href="#report">Report Lost Item</a></li>
+                <li><a href="#search">Search Found Items</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="report">
+        <h2>Report Lost Item</h2>
+        <form action="submit_lost_item.php" method="POST" enctype="multipart/form-data">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" name="item-name" required>
+
+            <label for="item-description">Item Description:</label>
+            <textarea id="item-description" name="item-description" rows="4" required></textarea>
+
+            <label for="item-category">Category:</label>
+            <select id="item-category" name="item-category" required>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="clothing">Vehicle</option>
+                <option value="clothing">Accessories</option>
+               
+            </select>
+
+            <label for="item-location">Location:</label>
+            <input type="text" id="item-location" name="item-location" required>
+
+            <label for="date-lost">Date Lost:</label>
+            <input type="date" id="date-lost" name="date-lost" required>
+
+            <label for="upload-image">Upload Image:</label>
+            <input type="file" id="upload-image" name="upload-image" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+</body>
+</html>

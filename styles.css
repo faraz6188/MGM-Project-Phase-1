@@ -1,0 +1,101 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, form, label, input, textarea, select, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+/* Set a background color and text color for the entire page */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a background color and white text */
+header {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation menu with a white background and blue links */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0078d4;
+    font-weight: bold;
+}
+
+/* Style the "Report Lost Item" section with a white background and padding */
+#report {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style form elements with spacing and margins */
+form label, form input, form textarea, form select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style the submit button with background color and white text */
+form button {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button:hover {
+    background-color: #005a9e;
+}
+
+/* Add some spacing for the form elements */
+form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the upload input to match the button */
+form input[type="file"] {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style the date input */
+form input[type="date"] {
+    width: 100%;
+}
+
+/* Style the text area for item description */
+form textarea {
+    resize: vertical;
+}
+
+/* Add some margin to the form elements within the label */
+form label input, form label textarea, form label select {
+    margin-top: 5px;
+}
